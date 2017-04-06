@@ -1,0 +1,420 @@
+@import url("http://web-oss-hb2-test.oss-cn-beijing.aliyuncs.com/static/css/4fc94b599a6eba7f02f26cd4591bc91a8b05ca0d.css");
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background: #f8f9fa;
+}
+//icon 公共样式
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+//会员首页图标
+@font-face {
+  font-family: 'iconfont';  /* project id 264807 */
+  src: url('//at.alicdn.com/t/font_77ldf6qxspkwewmi.eot');
+  src: url('//at.alicdn.com/t/font_77ldf6qxspkwewmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_77ldf6qxspkwewmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_77ldf6qxspkwewmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_77ldf6qxspkwewmi.svg#iconfont') format('svg');
+}
+//账户安全图标
+@font-face {
+  font-family: 'iconfont';  /* project id 264801 */
+  src: url('//at.alicdn.com/t/font_wg6159r3o0k65hfr.eot');
+  src: url('//at.alicdn.com/t/font_wg6159r3o0k65hfr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_wg6159r3o0k65hfr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_wg6159r3o0k65hfr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_wg6159r3o0k65hfr.svg#iconfont') format('svg');
+}
+//头部
+.header{
+    width: 1200px;
+    height: 80px;
+    background: #314187;
+    h1{
+        font-family: PingFangSC-Regular;
+        font-size: 20px;
+        color: #FFFFFF;
+        letter-spacing: 0px;
+        width: 220px;
+        height: 28px;
+        padding: 26px 0 26px 21px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        float: left;
+    }
+    .header_right{
+        float: right;
+        a{
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0px;
+            text-decoration: none;
+        }
+        .header_quit{
+            width: 80px;
+            height: 32px;
+            border: 1px solid #FFFFFF;
+            border-radius: 54px;
+            display: inline-block;
+            text-align: center;
+            margin: 23px 20px 29px 18px;
+            line-height:32px;
+        }
+        .header_log{
+            width: 42px;
+            height: 20px;
+            margin: 27px 0 33px 0;
+        }
+    }
+}
+//主题
+.content{
+    width: 100%;
+    height: 100%;
+}
+//左部导航
+.nav{
+    width: 180px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px 0px rgba(76,76,76,0.14);
+    float: left;
+    .nav_header_portrait{
+        width: 70px;
+        height: 70px;
+        //margin: 20px 55px;
+        border-radius: 50%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .nav_enterprise{
+        width: 42px;
+        height: 14px;
+        margin: 0 70px 10px 67px;
+        padding-top: 20px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #C1C6DB;
+        letter-spacing: 0px;
+        line-height: 14px;
+    }
+    .nav_name{
+        width: 138px;
+        height: 14px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0px;
+        line-height: 14px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .nav_list{
+        width: 180px;
+        //height: 100%; 
+        text-align: center;
+        padding-top: 21px;
+        box-sizing: border-box;
+        li{
+            width: 180px;
+            height: 51px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            letter-spacing: 0px;
+            line-height: 51px;
+            cursor:pointer;
+            border: 1px solid #F7F7F7;
+            a{
+                color: #C1C6DB;;
+                text-decoration: none;
+                .home{
+                    width: 16px;
+                    height: 16px;
+                    padding-right: 10px;
+                }
+                .account{
+                    width: 16px;
+                    height: 16px;
+                    padding-right: 10px;
+                }
+            }
+            span{
+                width: 4px;
+                height: 51px;
+                background: #FFFFFF;
+                display: inline-block;
+                float: left;
+            }
+        }
+        .selected{
+            background: rgba(48,65,135,0.04);
+            
+            span{
+                width: 4px;
+                height: 51px;
+                background: #314187;
+                display: inline-block;
+                float: left
+            }
+            a{
+                color: #314187;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
+
+
+//右部内容
+.content_right{
+    height: 100%;
+    width: 1020px; 
+    background: #f8f9fa;
+    padding-left: 180px;
+    //display: none;
+    //会员首页
+    .push{
+        width: 275px;
+        height: 359px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 4px 0px rgba(76,76,76,0.14);
+        margin: 40px 19px 0 40px;
+        float: left;
+        
+        dl{
+            dt{
+                padding: 20px 99px 21px 111px;
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                color: #333333;
+                letter-spacing: 0px;
+                line-height: 16px;
+            }
+            dd{
+                padding-left: 26px;
+                width: 218px;
+                height: 196px;
+            }
+            
+        }
+        p{
+            width: 180px;
+            height: 44px;
+            margin: 41px 0 0 48px;
+            text-align: center;
+            line-height: 44px;
+            a{
+                text-decoration: none;
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                color: #314187;
+                letter-spacing: 0px;
+                font{
+                    padding-left: 6px;
+                }
+            }
+            
+        }
+        p:hover{
+            background: #314187;
+            border-radius: 2px;
+            cursor:pointer;
+            a{
+                color: #FFFFFF;
+            }
+        }
+    }
+    //账户安全
+    .account{
+        width: 940px;
+        height: 234px;
+        background: #FFFFFF;
+        border-radius: 2px;
+        margin: 40px 0 0 40px;
+        float: left;
+        display: none;
+        p{
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0px;
+            float: left;
+            width: 64px;
+            height: 22px;
+            margin: 20px 0 0 20px;
+        }
+        .time{
+            float: left;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #999999;
+            letter-spacing: 0px;
+            margin: 23px 0 0 595px;
+        }
+        .line{
+            width: 900px;
+            height: 1px;
+            background: #E9EAEE;
+            float: left;
+            margin: 20px 0 0 20px;
+            .blueline{
+                width: 120px;
+                height: 2px;
+                background: #314187;
+                border-radius: 2px;
+                position: relative;
+                top: -22px;
+                left: -20px;
+            }
+        }
+        ul{
+            float: left;
+            margin: 30px 500px 0 20px;
+            li{
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #333333;
+                letter-spacing: 0px;
+                float: left; 
+            }
+            span{
+                position: relative;
+                top: 2px;
+                color: #666666;
+            }
+            .username{
+                width: 42px;
+                height: 20px;
+                padding: 0 20px 0 12px;
+            }
+            .phone{
+                width: 28px;
+                height: 20px;
+                padding: 0 20px 0 23px;
+            }
+            .pwd{
+                width: 56px;
+                height: 20px;
+                padding-right: 20px;
+                position: relative;
+                top: 2px;
+            }
+            .remarks{
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #C1C6DB;
+                letter-spacing: 0px;
+                width: 182px;
+                height: 20px;
+                padding-left: 34px;
+                position: relative;
+                top: 2px;
+            }
+            .modifyPwd{
+                float: right;
+                width: 100px;
+                height: 40px;
+                background: #314187;
+                border-radius: 2px;
+                font-family: PingFangSC-Regular;
+                font-size: 16px;
+                color: #FFFFFF;
+                letter-spacing: 0px;
+                font-weight:normal;
+                text-align: center;
+                line-height: 40px;
+                position: relative;
+                left: 458px;
+                bottom: 10px;
+                cursor:pointer;
+            }
+            
+        }
+    form{
+        float: left;
+        width: 940px;
+        height: 280px;
+        background: #FFFFFF;
+        display: none;
+        h3{
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #333333;
+            letter-spacing: 0px;
+            padding-left: 98px;
+            padding-top: 20px;
+            font-weight: normal;
+            input[type="password"]{
+                border: 1px solid #C1C6DB;
+                border-radius: 2px;
+                width: 300px;
+                height: 40px;
+                margin-left: 20px;
+            }
+            span{
+                font-size: 14px;
+                color: #FF2525;
+                padding-left: 20px;
+            }
+        }
+        .newName{
+            padding-left: 112px;
+        }
+        .prese{
+            width: 100px;
+            height: 40px;
+            background: #314187;
+            border-radius: 2px;
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            color: #FFFFFF;
+            letter-spacing: 0px;
+            margin: 30px 0 0 175px;
+            cursor:pointer;
+            outline:none;
+        }
+        .reset{
+            width: 100px;
+            height: 40px;
+            border: 1px solid #314187;
+            border-radius: 2px;
+            background: #FFFFFF;
+            margin: 30px 0 0 20px;
+            cursor:pointer;
+            outline:none;
+        }
+        font{
+            width: 816px;
+            height: 1px;
+            background: #E9EAEE;
+            display: block;
+            margin-left: 98px;
+        }
+        .notpwd{
+            font-weight: normal;
+            padding-left: 20px;
+            color: #FF2525;
+            display: none;
+        }
+        
+    }
+        
+    }
+
+}
+
